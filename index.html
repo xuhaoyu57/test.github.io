@@ -12,7 +12,51 @@
     <!--                                                               -->
     <!-- Consider inlining CSS to reduce the number of requested files -->
     <!--                                                               -->
-    <link type="text/css" rel="stylesheet" href="JsQRScanner.css">
+    <style>
+      .qrscanner video {
+  max-width: 95%;
+  max-height: 75%;
+}
+
+.row-element-set {
+  display: flex;
+  flex-direction: column;
+}
+.row-element {
+  padding: .2em 0em;
+}
+
+.row-element-set-QRScanner
+{
+  max-width: 30em; 
+  display: flex;
+  flex-direction: column;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+}
+
+.form-field-caption {
+  font-weight: bold;
+}
+
+.form-field-input
+{
+ width: 100%; 
+}
+
+    .error_message {
+       color: red; 
+       background-color: white; 
+       border: 1px solid red; 
+       padding: 4px; 
+       font-family: sans-serif 
+    }
+
+      </style>
 
     <!--                                           -->
     <!-- Any title is fine                         -->
